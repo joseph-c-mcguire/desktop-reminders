@@ -1,0 +1,7 @@
+colorama==0.4.6
+loguru==0.6.0
+notify2==0.3.1
+notify_py==0.3.43
+pathlib==1.0.1
+PyYAML==6.0.2
+win32-setctime==1.1.0

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name="desktop-reminders"
+version="0.0.1"
+requires-python = ">= 3.10"
+authors=[{name="Joseph McGuire", email="joseph.c.mcg@gmail.com"}]
+description = "This is a super simple script that just allows you to get reminders on your desktop."
+readme = {file = "README.txt", content-type = "text/markdown"}
+dynamic = ["dependencies"]
+license = {file = "LICENSE"}
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3- Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: MIT License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3.10",
+]
+
+[project.urls]
+Repository = "https://github.com/joseph-c-mcguire/desktop-reminders.git"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

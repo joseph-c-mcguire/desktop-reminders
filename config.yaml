@@ -1,0 +1,12 @@
+# Waits will happen in sequence, e.g. 3600 in first message and 1800 in second will be a total of 1800 + 3600 between cycles.
+
+message_1:
+  wait: 1 # seconds
+  message: 'Drink some water!!'
+  title: 'Water Reminder'
+  max-number: 12
+message_2:
+  wait: 1 # seconds
+  message: 'Stand up!!!'
+  title: 'Standing Reminder'
+  max-number: 12
